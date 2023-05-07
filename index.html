@@ -1,0 +1,638 @@
+<!-- 24-4-23 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COIN Cryptozen</title>
+</head>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
+<script src="https://kit.fontawesome.com/d940d584d4.js" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="Clip path group.png" type="image/x-icon">
+<script src="app.js"></script>
+
+<body>
+
+    <div class="body">
+
+        <!-- hambergur -->
+
+        <div id="hambergur">
+            <div id="hambergur_content">
+                <div class="ham_menu">
+                    <img src="Frame 5.png" alt="logo">
+                    <i class="fa-regular fa-circle-xmark" id="close_ham" onclick="close_ham()" ></i>
+                    <ol>
+                        <div>
+                            <li><input type="search" name="search" id="search" placeholder="Search...."><i class="fa-solid fa-magnifying-glass"
+                                style="color: #ffffff; background-color: #0194FC; padding: 20px;border-top-right-radius: 50px; border-bottom-right-radius: 50px; ">
+                            </i></li>
+                        </div>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#whyico">Why ICO?</a></li>
+                        <li><a href="#token">Token</a></li>
+                        <li><a href="#roadmap">Road Map</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><button>Get A Quote</button></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="ham_look">
+            <div><img src="Frame 5.png" alt="" style="padding: 8px;"></div>
+            <div><i class="fa-solid fa-bars" style="color: #ffffff;" id="ham_icon" onclick="open_ham()"></i></div>
+        </div>
+
+        <div class="nav">
+            <nav>
+                <img src="Frame 5.png" alt="logo">
+                <div class="nav_menu">
+                    <ol>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#whyico">Why ICO?</a></li>
+                        <li><a href="#token">Token</a></li>
+                        <li><a href="#roadmap">Road Map</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><i class="fa-solid fa-magnifying-glass"
+                                style="color: #ffffff; background-color: #0194FC; padding: 10px;"></i></li>
+                    </ol>
+                </div>
+                <button>Get A Quote</button>
+            </nav>
+           
+            <img src="shape.png" class="shape">
+        </div>
+
+        
+
+        <!-- body -->
+
+        <div class="heropage" id="home">
+            <div>
+                <h1>Cryptozen</h1>
+                <h3>for the cryptocurrency business</h3>
+                <p>Rapidiously cultivate seamless quality vectors rather than extensive
+                    and idea-sharing. Conveniently recaptiualize.
+                </p>
+                <button class="blue_button">Download Whitepapers<i class="fa-solid fa-arrow-right-long"
+                        style="color: #ffffff;margin-left: 10px;"></i></button>
+            </div>
+            <div>
+   <!--updated width from 550 -->            <img src="main-img.png" width="315px" class="main_img"><img src="coin-1.png" class="main-coin"><img src="coin-2.png"
+                    class="coin-1"><img src="coin-2.png" class="coin-2">
+            </div>
+        </div>
+
+
+        <!-- frame-1 -->
+
+
+        <div class="frame_1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#0B0B47" fill-opacity="1"
+                    d="M0,128L34.3,138.7C68.6,149,137,171,206,165.3C274.3,160,343,128,411,112C480,96,549,96,617,106.7C685.7,117,754,139,823,160C891.4,181,960,203,1029,192C1097.1,181,1166,139,1234,106.7C1302.9,75,1371,53,1406,42.7L1440,32L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
+                </path>
+            </svg>
+            <div class="container_1">
+
+                <!-- left -->
+
+                <div class="left">
+                    <h3>Pre-Sale Starting in</h3>
+                    <h4>Super Bounty Up to 50%</h4>
+                    <div id="countdown">
+                        <div style="background-color: #0094FB; border-radius: 5px; padding: 10px;">
+                            <span id="days"></span>
+                            <div class="smalltext">Days</div>
+                        </div>
+                        <div style="background-color: #48DCA8; border-radius: 5px; padding: 10px;">
+                            <span id="hours"></span>
+                            <div class="smalltext">Hours</div>
+                        </div>
+                        <div style="background-color: #FEC107; border-radius: 5px; padding: 10px;">
+                            <span id="minutes"></span>
+                            <div class="smalltext">Min</div>
+                        </div>
+                        <div style="background-color: #E031CA; border-radius: 5px; padding: 10px;">
+                            <span id="seconds"></span>
+                            <div class="smalltext">Sec</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- right -->
+
+                <div class="right">
+                    <pre>$6,000,000  $3,000  8,000,000,00</pre>
+                    <div class="range"></div>
+                    <p><b>Softcap</b> Reached in 30 days</p>
+                    <span><b>Pre-Sale 1 ETH = 8,000 ERI</b></span><button>By Token</button>
+                    <div class="icon">
+                        <img src="visa.png" alt="">
+                        <img src="master-card.png" alt="">
+                        <img src="bitcoin.png" alt="">
+                        <img src="paypal.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- frame---2 -->
+
+
+        <div class="frame_2" id="about">
+            <div>
+                <img src="phone.png" alt="" class="phn">
+                <img src="green-box.png" class="green-box">
+                <img src="blue coin.png" class="blue-coin">
+                <img src="blue-box.png" class="blue-box">
+            </div>
+            <div>
+                <h3>EXCHANGE YOUR COIN</h3>
+                <h2>What Is Cryptozen?</h2>
+                <p>Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. Seamlessly
+                    generate user friendly opportunitie after principle-centered e-markets. Proactively visualize
+                    functional</p>
+                <div class="diff">
+                    <DIV>
+                        <img src="about-icon1.png" alt="">
+                        <h1>Wallet</h1>
+                        <p>Monotonectally productivate that is r friendly opportunitie after an when us e-markets.
+                            Proactively has been do benefits.</p>
+                        <button class="blue_button">JOIN US ON TELEGRAM</button>
+                    </DIV>
+                    <DIV>
+                        <img src="about-icon2.png" alt="" style="background-color: #FEC107;">
+                        <h1>Exchange</h1>
+                        <p>Monotonectally productivate that is r friendly opportunitie after an when us e-markets.
+                            Proactively has been do benefits.</p>
+                    </DIV>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- frame---3 -->
+
+
+        <div class="frame_3" id="whyico">
+            <h3>REASON FOR CHOOSE US</h3>
+            <h2>Why Choose Our Token?</h2>
+            <div class="why">
+                <div>
+                    <img src='http://wp.dreamitsolution.net/cryptozen/wp-content/uploads/2021/11/icon-1.png' alt="">
+                    <h4>Mobile Payment Make Easy</h4>
+                    <p>You can use mobile device to pay with simple steps in value compellingly</p>
+                </div>
+                <div style="background-color: #062663;">
+                    <img src="icon-2.png" alt="">
+                    <h4>Mobile Payment Make Easy</h4>
+                    <p>You can use mobile device to pay with simple steps in value compellingly</p>
+                </div>
+                <div style="background-color: #331259;">
+                    <img src="icon-3.png" alt="">
+                    <h4>Mobile Payment Make Easy</h4>
+                    <p>You can use mobile device to pay with simple steps in value compellingly</p>
+                </div>
+                <div style="background-color: #392E32;">
+                    <img src="icon-4.png" alt="">
+                    <h4>Mobile Payment Make Easy</h4>
+                    <p>You can use mobile device to pay with simple steps in value compellingly</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- frame--4 -->
+
+        <div class="frame_4">
+            <hr>
+            <div>
+                <h1>1 CNL = 0.0013 BTC</h1>
+                <button class="blue_button">BY TOKEN NOW</button>
+            </div>
+        </div>
+        <div class="pie">
+            <div>
+                <div class="chart">
+                    <h3 class="h3">Funding Allocation</h3>
+                    <img src="download.png" class="circle" width="300px"> <!--updated width from 500 -->
+                    <img src="pie-char-1.png" alt="" class="piechart-1">
+                    <ul>
+                        <li>12% Reserved Funding</li>
+                        <li>8% Product Development</li>
+                        <li>40% Bounty Campaign</li>
+                        <li>20% Advisor</li>
+                        <li>15% Funding</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="chart" style="background-color: #0C3251;">
+                <h3 class="h3">Token Allocation</h3>
+                <img src="download (1).png" class="circle" width="300px"> <!--updated width from 500 -->
+                <img src="pie-chart-2.png" class="piechart-2">
+                <ul>
+                    <li>12% Reserved Funding</li>
+                    <li>8% Product Development</li>
+                    <li>40% Bounty Campaign</li>
+                    <li>20% Advisor</li>
+                    <li>15% Funding</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- frame-----5 -->
+
+        <div class="frame_5" id="token">
+            <h3>SALES INFO</h3>
+            <h2>COIN Token Sales?</h2>
+        </div>
+        <div class="token">
+            <div>
+                <h5 class="date">Aug 16- Aug 19</h5>
+                <h6>20% Bonus</h6>
+                <p>$0.30009/token</p>
+            </div>
+            <div>
+                <h5 class="date">Sep 1- Oct 19</h5>
+                <h6>47% Bonus</h6>
+                <p>$2.30009/token</p>
+            </div>
+            <div>
+                <h5 class="date">Nov 22- Dec 9</h5>
+                <h6>5% Bonus</h6>
+                <p>$3.30009/token</p>
+            </div>
+            <div>
+                <h5 class="date">Jan 13- Feb 28</h5>
+                <h6>10% Bonus</h6>
+                <p>$3.50009/token</p>
+            </div>
+            <div>
+                <h5 class="date">March 23- April 2</h5>
+                <h6>40% Bonus</h6>
+                <p>$7.30009/token</p>
+            </div>
+            <div>
+                <h5 class="date">April 2- April 29</h5>
+                <h6>30% Bonus</h6>
+                <p>$3.38009/token</p>
+            </div>
+        </div>
+        <div class="hr">
+            <div>
+                <hr>
+            </div>
+            <div>
+                <hr>
+            </div>
+            <div>
+                <hr>
+            </div>
+            <div>
+                <hr>
+            </div>
+            <div>
+                <hr>
+            </div>
+            <div>
+                <hr>
+            </div>
+        </div>
+        <div class="hr-h">
+            <hr>
+        </div>
+        <div class="dot">
+            <div>Aug 16- Aug 19</div>
+            <div>Sep 1- Oct 19</div>
+            <div>Nov 22- Dec 9</div>
+            <div>Jan 13- Feb 28</div>
+            <div>March 23- April 2</div>
+            <div>April 2- April 29</div>
+        </div>
+
+
+        <!-- frame-----------6 -->
+
+        <div class="main" id="roadmap">
+            <h4>ROAD MAP</h4>
+
+            <h3>Our Strategy & Project Plan</h3>
+    
+    
+            <div class="container">
+    
+                <ul>
+    
+                    <li>
+                        <h3 class="title">Concept Development</h3>
+                        <h6>Nov 2020</h6>
+    
+    
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eaque quidem esse? Incidunt, odit beatae?</p>
+    
+    
+                        <span class="circle"></span>
+    
+    
+                    </li>
+    
+                    <li>
+    
+                        <h3 class="title">White Paper</h3>
+                        <h6>Dec 2020</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eaque quidem esse? Incidunt, odit beatae?</p>
+    
+    
+                        <span class="circle"></span>
+    
+    
+                    </li>
+    
+                    <li>
+    
+                        <h3 class="title">Concept Development</h3>
+                        <h6>Jun 2021</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eaque quidem esse? Incidunt, odit beatae?</p>
+    
+    
+                        <span class="circle"></span>
+    
+    
+                    </li>
+    
+                    <li>
+    
+                        <h3 class="title">COIN Developer</h3>
+                        <h6>March 2021</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eaque quidem esse? Incidunt, odit beatae?</p>
+    
+    
+                        <span class="circle"></span>
+    
+    
+                    </li>
+    
+                </ul>
+    
+            </div>
+    
+        </div>
+
+
+        <!-- frame---------6 -->
+
+
+        <div class="frame_6" id="Whitepapers">
+            <div class="book">
+                <div>
+                    <h3>WHITE PAPERS</h3>
+                    <h2>Read Our Documents</h2>
+                    <p>Monotonectally productivate virtual benefits vis-a-vis clicks-andd ship. Seamlessly generate user
+                        friendly opportunitie after principle e-markets. Proactively visualize functional
+                    </p>
+                    <div>
+                        <p><i class="fa-sharp fa-solid fa-circle-check" style="color: #0194fc;"></i> White Papers</p>
+                        <p><i class="fa-sharp fa-solid fa-circle-check" style="color: #0194fc;"></i> Privacy Policy</p>
+                        <p><i class="fa-sharp fa-solid fa-circle-check" style="color: #0194fc;"></i> Turn of Coin Sale</p>
+                        <p><i class="fa-sharp fa-solid fa-circle-check" style="color: #0194fc;"></i> Token Details</p>
+                    </div>
+                    <button class="blue_button" >DOWNLOAD PDF</button>
+                </div>
+                <div>
+                    <img src="book.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- frame-----7 -->
+
+        <div class="frame_7" id="team">
+            <h3>OUR TEAM</h3>
+            <h2>Meet Our Expert Team</h2>
+            <div class="team">
+                <div>
+                    <img src="team-1.png" alt="">
+                    <h5>John Cena</h5>
+                    <p>Head Of Marketing</p>
+                    
+                </div>
+                <div>
+                    <img src="team-2.png" alt="">
+                    <h5>Jake Wills</h5>
+                    <p>CEO</p>
+                </div>
+                <div>
+                    <img src="team-3.png" alt="">
+                    <h5>Lucy Linda</h5>
+                    <p>Manager</p>
+                </div>
+                <div>
+                    <img src="team-4.png" alt="">
+                    <h5>Savena Hello</h5>
+                    <p>Founder</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- frame-----------8 -->
+
+        <div class="frame_8">
+            <div>
+                <img src="faq.png" alt="" >
+            </div>
+            <div class="menu"  onclick="hide_off_content()">
+                <ul>
+                    <li onclick="showContent('content1')">General</li>
+                    <li onclick="showContent('content2')">Token</li>
+                    <li onclick="showContent('content3')">Client</li>
+                    <li onclick="showContent('content3')">Pre COIN</li>
+                </ul>
+                <div class="off_content" id="hide_content">
+                    <h5>01 Why COIN ?</h5>
+                    <p>It is a  eill be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p>
+                    <hr>
+                    <h5>02  COIN and documents</h5>
+                    <p>It is a long esfaqlished fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p>
+                    <hr>
+                    <h5>03 What is COIN Criptozen?</h5>
+                    <p> a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p>
+                </div>
+                <div class="content">
+                    <div id="content1">
+                        <h5>01 Content One ?</h5>
+                        <p>It is a long eill be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p>
+                        <hr>
+                        <h5>02 Content COIN ?</h5>
+                        <p>It is a long esfaqlished fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p>
+                        <hr>
+                        <h5>013 What is COIN ?</h5>
+                        <p> a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p>
+                    </div>
+                    <div id="content2">
+                        <h5>01 Content One ?</h5>
+                        <p>It is a long esfaqlished fact that a will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p>
+                        <hr>
+                        <h5>02 How to buy COIN ?</h5>
+                        <p>It is a long fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p>
+                        <hr>
+                        <h5>03 Privacy policy of COIN ?</h5>
+                        <p>It is a long esfaqlished fact that a will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p>
+                    </div>
+                    <div id="content3">
+                        <h5>01 Content?</h5>
+                        <p>It is a long esfaqlished fact that a reader will be by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p>
+                        <hr>
+                        <h5>02 What cryptocurrencies can I use to purchase?</h5>
+                        <p>It is a long esfaqlished fact that a reader will be distracted by the content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p>
+                        <hr>
+                        <h5>03 How can I participate in the ICO Token sale?</h5>
+                        <p>It is a long esfaqlished fact that a reader will be distracted by the readable of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p>
+                    </div>
+                    <div id="content4">
+                        <h5>01 How to bid?</h5>
+                        <p>It is a long fact that a reader will be by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p>
+                        <hr>
+                        <h5>02 What can I use to purchase?</h5>
+                        <p>It is a long esfaqlished fact a reader will be distracted by the content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p>
+                        <hr>
+                        <h5>03 How can I participate in the ICO Token sale?</h5>
+                        <p>It is a long esfaqlished fact that a reader will be distracted by the readable of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- contact -->
+
+        <div class="frame_9" id="contact">
+            <div class="contact">
+                <div class="form">
+                    <h3>Contact Us</h3>
+                    <form action="" method="get"></form>
+                    <input type="text" name="name" id="name" placeholder="Your Name">
+                    <input type="email" name="email" id="email" placeholder="Your Email">
+                    <input type="number" name="number" id="number" placeholder="Your Phone Number">
+                    <textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="Message"></textarea> 
+                    <button class="blue_button" type="submit">Send Message</button>
+                </div>
+                <div class="visit">
+                    <h3>Visit Us</h3>
+                    <div>
+                        <i class="fa-sharp fa-solid fa-location-dot" style="color: #ffffff;"></i>
+                        <h5>COIN Crypto</h5>
+                        <p>Dolfin RD, 18/A, Trintra, London</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-phone-volume" style="color: #ffffff;"></i>
+                        <h5>Customer Service Number</h5>
+                        <p>+18 200 418 2023</p>
+                        <p>+27 148 567 2023</p>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-envelope" style="color: #ffffff;"></i>
+                        <h5>Email Us</h5>
+                        <p>service@coin.com</p>
+                        <p>help@coin.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- footer -->
+
+
+        <footer>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#06174F" fill-opacity="1" d="M0,96L30,85.3C60,75,120,53,180,37.3C240,21,300,11,360,37.3C420,64,480,128,540,176C600,224,660,256,720,234.7C780,213,840,139,900,133.3C960,128,1020,192,1080,186.7C1140,181,1200,107,1260,69.3C1320,32,1380,32,1410,32L1440,32L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
+            <div>
+                <img src="Frame 5.png" alt="">
+                <p>There are many variations of pass of Lorem Ipsum available, but the majority have suffered</p>
+                <h6>Follow Us: </h6>
+                <div class="social_icons">
+                    <i class="fa-brands fa-facebook-f" style="color: #7b89a3;"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div>
+                <h6> Help Links: </h6>
+                <ul>
+                    <li><a href="#whyico">Why ICO?</a></li>
+                    <li><a href="#token">Token</a></li>
+                    <li><a href="#roadmap">Road Map</a></li>
+                    <li><a href="#team">Team</a></li>
+                </ul>
+            </div>
+            <div>
+                <h6>Quick Links:</h6>
+                <ul>
+                    <li><a href="#home">COIN</a></li>
+                    <li><a href="#Whitepapers">White Papers</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+            <div>
+                <h6>Quick Links:</h6>
+                <p>Sent Us a Newsletter And Get Update.</p>
+                <input type="email" name="" id="" placeholder=" Your Email"><button  type="submit">Subscribe</button>
+            </div>
+        </footer>
+        
+        <!-- footer afert -->
+        
+        
+        <div class="footer_after">
+            <div><p>Copyright © COIN all rights reserved.</p></div>
+            <div>
+                <ul>
+                    <li><a href="#">Terms Condition</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="testing">
+
+    </div>
+<script>
+
+    // scroll trigger
+
+    gsap.to(".main_img", { y:-50, duration: 1});
+    gsap.to(".coin-1", { y:50, duration: 1});
+    gsap.to(".coin-2", { y:50, duration: 1});
+    
+
+
+
+
+
+</script>
+
+</body>
+
+</html>
